@@ -2,10 +2,18 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <style>
-
         html {
-        scroll-behavior:smooth ;
+            scroll-behavior:smooth ;
         }
+
+        span{
+            color: #f1ff71;
+            text-shadow: 0 0 10px #FFFFFF;
+        }
+
+        h1,h2{
+            color: #ee3f65;
+            text-shadow: #474747 3px 5px 2px;}
 
         body { 
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -15,9 +23,9 @@
         }
 
         body nav {
-        position: sticky;
-        top: 0;
-        z-index: 99;
+            position: sticky;
+            top: 0;
+            z-index: 99;
         }
         .bg-image {
             height: 30%;
@@ -89,26 +97,26 @@
             border-image-source: linear-gradient(to left, red,blue );
         }
         .grid {
-        display: grid; 
-        grid-template-columns: 1fr;
-        justify-content: space-around;
-        align-items: flex-end;
-        align-content: space-around;
-        row-gap: 30px;
+            display: grid; 
+            grid-template-columns: 1fr;
+            justify-content: space-around;
+            align-items: flex-end;
+            align-content: space-around;
+            row-gap: 30px;
         }
 
         .content,.content-2,.content-3 {
-        color: #242424;
-        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(186,121,121,1) 37%, rgba(228,224,224,1) 85%);
-        font-weight: lighter;
-        text-align: center;
-        box-sizing: border-box;
-        height: 100%;
-        padding: 7vh 0.5vw;
-        margin-left: auto;
-        margin-right: auto;
-        border-style:10 px solid;
-        border-radius: 100% 0% 100% 0% / 40% 40% 60% 60%;
+            color: #242424;
+            background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(186,121,121,1) 37%, rgba(228,224,224,1) 85%);
+            font-weight: lighter;
+            text-align: center;
+            box-sizing: border-box;
+            height: 100%;
+            padding: 7vh 0.5vw;
+            margin-left: auto;
+            margin-right: auto;
+            border-style:10 px solid;
+            border-radius: 100% 0% 100% 0% / 40% 40% 60% 60%;
         } 
 
         .content-2 {
@@ -120,8 +128,8 @@
                 }
 
         .left {
-        float: left;
-        padding: 0 5px 0 0;}
+            float: left;
+            padding: 0 5px 0 0;}
 
         .center{
             margin-left: auto;
@@ -151,26 +159,27 @@
         }
 
         .Csubmit,.Creset{
-        box-shadow: 3px 3px 0px 0px #8a2a21;
-        background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
-        background-color:#c62d1f;
-        border-radius:9px;
-        border:1px solid #d02718;
-        display:inline-block;
-        cursor:pointer;
-        color:#ffffff;
-        font-size:17px;
-        padding:6px 8px;
-        text-decoration:none;
+            box-shadow: 3px 3px 0px 0px #8a2a21;
+            background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+            background-color:#c62d1f;
+            border-radius:9px;
+            border:1px solid #d02718;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-size:17px;
+            padding:6px 8px;
+            text-decoration:none;
     }
     .Csubmit:hover,.Creset:hover{
-        background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
-        background-color:#f24437;
+            background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+            background-color:#f24437;
     }
     .Csubmit:active,.Creset:active{
-        position:relative;
-        top:1px;
+            position:relative;
+            top:1px;
     } */
+
 
     </style>
         </head>
@@ -194,15 +203,15 @@
                   <div class="content">
                       <div class="box2">
                           <p>
-                        <img src="https://cdn.discordapp.com/attachments/877855986801602560/947102775785951242/unknown.png" align="top" height="240x"><h2>About me &#128225</h2>
-                        Hello, My name is Jayden Tang, my fullname is Tang Ching Ngai. I am a student studying Infomation Security in The Hong Kong Polytechnic University! Since i am a senior entry of this programme, this semester is only the second semester i been through! It is quite unfortunate that i hardly have time and occasion to explore more about PolyU, due to my study workloads and the pandemic outbreak in Hong Kong. However, i still really enjoy studying in this University because of the lovely people and beautiful surroundings here!</p></div>
+                        <img src="https://cdn.discordapp.com/attachments/877855986801602560/947102775785951242/unknown.png" align="left" height="240x"><h2>About me &#128225</h2>
+                        Hello, My name is <span>Jayden Tang</span>, my fullname is Tang Ching Ngai. I am a student studying Infomation Security in The Hong Kong Polytechnic University! Since i am a senior entry of this programme, this semester is only the second semester i been through! It is quite unfortunate that i hardly have time and occasion to explore more about PolyU, due to my study workloads and the pandemic outbreak in Hong Kong. However, i still really enjoy studying in this University because of the lovely people and beautiful surroundings here!</p></div>
                   </div>
                 
                 
                   <div class="content">
                     <div class="box2">
                     <p><h1>My Passion &#128170</h1>
-                    My Passion is actually really simple: Traveling and Meeting new people! I am a adventurous person who love to seek new experiences. Chit Chatting with strangers and exploring new places are my favorite things to do.
+                    My Passion is actually really simple: <span>Traveling</span> and <span>Meeting</span> new people! I am a adventurous person who love to seek new experiences. Chit Chatting with strangers and exploring new places are my favorite things to do.
                     <br><br>
                     <img src="https://adminassets.devops.arabiaweather.com/sites/default/files/field/image/traveling.jpg" style="width:50% ;max-width:500px" >
                     </p>
@@ -222,7 +231,7 @@
                   <div class="content-2">
                     <div class="box3">
                         <h1>Computer-Related Subject &#x1f4bb</h1>
-                        <img src="https://th.bing.com/th/id/OIP.WMWTs9oRWmMk-cZ5Rc4ZzwHaE7?pid=ImgDet&rs=1" width="350px" align="top"> 
+                        <img src="https://th.bing.com/th/id/OIP.WMWTs9oRWmMk-cZ5Rc4ZzwHaE7?pid=ImgDet&rs=1" width="350px" align="top"><br>
                     <p> 
                     As previously mentioned, i love experiencing new stuffs, and the internet is a wonderful invention that connect everybody in one place.  I really love learning different computer skills as it can expand my horizon and have a better understanding of modern technology. In addition, i can also put these skills into my resume in order to get a better career in the future.</p>
 
@@ -239,7 +248,7 @@
                       <div class="box4">
                           <h1>My Plan &#128185</h1>
                         
-                        <img src="https://blog.sellerant.com/hubfs/planning-framework-1.jpeg#keepProtocol" width="340px" align="top"><p>
+                        <img src="https://blog.sellerant.com/hubfs/planning-framework-1.jpeg#keepProtocol" width="350px" align="top"><p>
                         My Plan in this Semester is quite straight forward - To Get a Good internship so that i can start experiencing the real life exposure, i am going to try to get a hand on real life situtation of how to deal with computer-related problems. I want a internship that can assist me on handling diffcult tasks, instead of giving me menial works. I really want to learn more about both front-end developing and back-end developing. A good internship will really be beneficial and suitable for my career starter.</p>
                         <p>
                             Also, i really love to meet new more people in the PolyU campus. Since we all have our Final Year Project next Year. It is most definitely more comfortable if we can work together or share our thoughts on the FYP topics. Therefore, i really hope the pandemic is ending soon, so that the campus can resume face-to-face teaching and i can meet new people again!
@@ -250,7 +259,7 @@
                 
                   <div class="content-3">
                     <div class="box4">
-                        <h1>Last but not the least...</h1>
+                    <h1>Last but not the least...</h1>
                     <p>Thank you for reading my page! I tried to be as creative as possible so that my page can look a bit different from the others. I sincerely hope that you enjoy reading this page even though it does not have much! If you have any suggestion or recommendation, feel free to contact me by filling this box!
                         <form action="mailto:21002516d@connect.polyu.hk"
                                 method="post"
