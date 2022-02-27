@@ -1,0 +1,631 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <style>
+
+        html {
+        scroll-behavior:smooth ;
+        }
+
+        body { 
+            margin: 0;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
+            min-height: 100vh;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+            text-align: left;
+        }
+        body nav {
+        position: sticky;
+        top: 0;
+        z-index: 99;
+        }
+        .bg-image {
+            height: 30%;
+            background-image:url(https://www.polyu.edu.hk/-/media/department/home/setting/default_image_2x.jpg?bc=ffffff&h=630&w=1200&hash=8AE8BD3002A7BA999BA975E67C49A716) ;
+            background-size: cover; 
+            background-repeat:no-repeat;
+            background-position: center center;
+        }
+
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            box-sizing: border-box;
+            padding: 30px;
+            background: rgb(71, 63, 65);
+            position: absolute;
+            top:-30px;
+            }
+        
+        li {
+            list-style: none;
+            margin-right: 20px;
+            font-size: 25px;
+            font-weight: bold; }
+            
+        li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            }
+
+        section {
+            margin: auto;
+            display: grid;
+            place-items: center;
+            font-size: 20px;
+            background: rgb(255, 255, 255);
+            overflow: auto;
+        }
+        
+
+        .box, .box2, .box3, .box4{
+            position: relative;
+            text-align: center;
+            background-color: rgba(0,0,0,.5);
+            color: #fff;
+            padding: 10px;
+            font-size: 30px;
+            display: block;
+            top: 50%;
+            transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .box2 {
+            border: 10px solid;
+            border-image-slice: 1;
+            border-width: 5px;
+            border-image-source: linear-gradient(to left, red, rgb(155, 115, 40));
+        }
+
+        .box3 {
+            border: 10px solid;
+            border-image-slice: 1;
+            border-width: 5px;
+            border-image-source: linear-gradient(to left, red, green);
+            overflow: hidden;
+
+        }
+
+        .box4 {
+            border: 10px solid;
+            border-image-slice: 1;
+            border-width: 5px;
+            border-image-source: linear-gradient(to left, red,blue );
+        }
+        .grid {
+        display: grid;
+        grid-template: 1fr / auto  ;
+        justify-items: start;
+        align-items: flex-start;
+        column-gap: 30px;
+        row-gap: 5px;
+        }
+
+        .content,.content-2,.content-3 {
+        color: #242424;
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(186,121,121,1) 37%, rgba(228,224,224,1) 85%);
+        font-weight: lighter;
+        text-align: center;
+        box-sizing: border-box;
+        height: 100%;
+        padding: 5ex;
+        border-style:10 px solid;
+        border-radius: 100% 0% 100% 0% / 40% 40% 60% 60%;
+        }
+
+        .content-2 {
+            background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(240,211,161,1) 55%, rgba(0,0,0,1) 100%); 
+        }
+
+        .content-3 {
+            background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(161,194,240,1) 55%, rgba(255,255,255,1) 100%); 
+                }
+
+        .left {
+        float: left;
+        padding: 0 5px 0 0;}
+
+        .center{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .tableAll,.table-B,.table-W{
+            border: none;
+            border-spacing: 0;
+            border-collapse: collapse;
+            padding: auto;
+            margin-left: auto;
+            margin-right: auto;
+        } 
+        
+        td{
+            font-size:0px;
+            padding: 5px;
+        }
+
+        .table-B{
+            background-color: blue;
+        }
+
+        .table-W{
+            background-color: white;
+        }
+
+        .Csubmit,.Creset{
+        box-shadow: 3px 3px 0px 0px #8a2a21;
+        background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+        background-color:#c62d1f;
+        border-radius:9px;
+        border:1px solid #d02718;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-size:17px;
+        padding:6px 8px;
+        text-decoration:none;
+    }
+    .Csubmit:hover,.Creset:hover{
+        background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+        background-color:#f24437;
+    }
+    .Csubmit:active,.Creset:active{
+        position:relative;
+        top:1px;
+    }
+
+
+
+
+
+
+
+    </style>
+        </head>
+    <title>Self Introduction</title>
+
+    <body>
+        <div class="bg-image">
+            <div class="box">
+                <h1>Welcome to my introduction page!</h1></div>
+           </div>
+        <nav>
+            <ul>
+              <li><a href="#first">About Me</a></li>
+              <li><a href="#second">My Hobbies</a></li>
+              <li><a href="#third">My Plan</a></li>
+            </ul>
+          </nav>
+        <body>
+            <br><br><br>
+            <section id="first"><div class="grid">
+                <div class="item">
+                  <div class="content">
+                      <div class="box2">
+                          <p>
+                        <img src="https://cdn.discordapp.com/attachments/877855986801602560/947102775785951242/unknown.png" align="left"><h2>About me &#128225</h2>Hello, My name is Jayden Tang, my fullname is Tang Ching Ngai. I am a student studying Infomation Security in The Hong Kong Polytechnic University! Since i am a senior entry of this programme, this semester is only the second semester i been through! It is quite unfortunate that i hardly have time and occasion to explore more about PolyU, due to my study workloads and the pandemic outbreak in Hong Kong. However, i still really enjoy studying in this University because of the lovely people and beautiful surroundings here!</p></div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="content">
+                    <div class="box2">
+                    <p><h1>My Passion &#128170</h1>
+                    My Passion is actually really simple: Traveling and Meeting new people! I am a adventurous person who love to seek new experiences. Chit Chatting with strangers and exploring new places are my favorite things to do.
+                    <br><br>
+                    <img src="https://adminassets.devops.arabiaweather.com/sites/default/files/field/image/traveling.jpg" style="width:50% ;max-width:500px" >
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="second"><div class="grid">
+                <div class="item">
+                  <div class="content-2">
+                      <div class="box3"><p>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/ChessSet.jpg" height="250px" align="top"><h1>My Hobbies &#x265F</h1> Except those hobbies I mentioned, i also love playing chess! Chess is fun because it is a elegant game of strategy and tactics played upon a perfectly sized, symmetrical battlefield. It really is a work of art, rewarding the player who understand and being creative with their playstyle! You should try it to see if you like it or not!</p></div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="content-2">
+                    <div class="box3">
+                        <h1>Computer-Related Subject &#x1f4bb</h1>
+                        <img src="https://th.bing.com/th/id/OIP.WMWTs9oRWmMk-cZ5Rc4ZzwHaE7?pid=ImgDet&rs=1" width="380px" align="top"> 
+                    <p> 
+                    As previously mentioned, i love experiencing new stuffs, and the internet is a wonderful invention that connect everybody in one place.  I really love learning different computer skills as it can expand my horizon and have a better understanding of modern technology. In addition, i can also put these skills into my resume in order to get a better career in the future.</p>
+
+                    <h1>This Semester &#127754</h1>
+                    <p>In this semester, my study focus is front-end designing, which involes creating the HTML,CSS, and  JavaScript code that makes up a user interface. We want to implement a user interface framework that is responsive, visually appealing and user-friendly. I think web developing is really fun as the basic knowledge you need to know before coding is minimal.However, when you started to get into deeper, things can get really complicated. It is easy to learn but really diffcult to master. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="third"><div class="grid">
+                <div class="item">
+                  <div class="content-3"> 
+                      <div class="box4">
+                          <h1>My Plan &#128185</h1>
+                        
+                        <img src="https://blog.sellerant.com/hubfs/planning-framework-1.jpeg#keepProtocol" width="380px" align="left"><p>
+                        My Plan in this Semester is quite straight forward - To Get a Good internship so that i can start experiencing the real life exposure, i am going to try to get a hand on real life situtation of how to deal with computer-related problems. I want a internship that can assist me on handling diffcult tasks, instead of giving me menial works. I really want to learn more about both front-end developing and back-end developing. A good internship will really be beneficial and suitable for my career starter.</p>
+                        <p>
+                            Also, i really love to meet new more people in the PolyU campus. Since we all have our Final Year Project next Year. It is most definitely more comfortable if we can work together or share our thoughts on the FYP topics. Therefore, i really hope the pandemic is ending soon, so that the campus can resume face-to-face teaching and i can meet new people again!
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="content-3">
+                    <div class="box4">
+                        <h1>Last but not the least...</h1>
+                    <p>Thank you for reading my page! I tried to be as creative as possible so that my page can look a bit different from the others. I sincerely hope that you enjoy reading this page even though it does not have much! If you have any suggestion or recommendation, feel free to contact me by filling this box!
+                        <form action="mailto:21002516d@connect.polyu.hk"
+                                method="post"
+                                target="_top"
+                                enctype="text/plain">
+                                <label>Suggestion:</label>
+                                <br>
+                                <textarea name="suggestion " rows="10" cols="28">
+                                </textarea><br>
+                                <input type="submit" value="Send" class="Csubmit">
+                                <input type="reset" value="Reset"class="Creset">
+                        </form>
+                        
+                        <br>
+                        <br>
+                        <table class="tableAll">
+                            <tbody>
+                                <tr>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                    <td class="table-B">X</td>
+                                  </tr>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                  <td class="table-W">X</td>
+                                </tr>
+    
+                              <tr>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                              </tr>
+                              <tr>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                              </tr>
+                              <tr>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                              </tr>
+                              <tr>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                              </tr>
+                              <tr>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-W">X</td>
+                              </tr>
+                              <tr>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                                <td class="table-W">X</td>
+                              </tr>
+                              <tr>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                                <td class="table-B">X</td>
+                              </tr>
+                            </tbody>
+                            </table>
+
+
+
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+          </body>
+    </body>
+</html>
